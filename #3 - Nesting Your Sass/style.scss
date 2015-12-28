@@ -1,0 +1,58 @@
+$blue: #708c87;
+$margin: 5%;
+$cream: #F2EFEB;
+$cream2: #bdbab7;
+
+@mixin border-radius($radius:20px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+body {
+  background: #262626;
+  font-family: cursive;
+}
+
+header {
+  margin: 20px 0 0 $margin;
+  h1 {
+    color: $blue;
+  }
+
+  h2 {
+    color: $blue;
+    margin: 10px $margin+5%;
+  }
+}
+
+p {
+  margin: 20px $margin;
+}
+
+a {
+  color: $blue;
+}
+
+.grad {
+  @include border-radius();
+  padding: 1%;
+  background-color: $cream;
+  background-image: -webkit-linear-gradient(top, $cream, $cream2);
+  .intro {
+    @include border-radius();
+    background-color: lighten($blue,20%);
+    a {
+      font-size: 25px;
+      &:hover {
+        @include border-radius(10px);
+        background-color: $cream2;
+      }
+    }
+  }
+  .feature{
+    @extend  .intro;
+    border: 1px solid #343d44;
+  }
+
+}

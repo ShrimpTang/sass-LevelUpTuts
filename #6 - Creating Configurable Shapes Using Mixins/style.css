@@ -1,0 +1,14 @@
+.circle {
+  width: 250px;
+  height: 250px;
+  background: #bdbab7;
+  border-radius: 125px; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 140px solid transparent;
+  border-bottom: 140px solid transparent;
+  border-left: 140px solid #dd33dd; }
+
+/*# sourceMappingURL=style.css.map */
