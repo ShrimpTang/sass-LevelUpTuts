@@ -1,7 +1,8 @@
 @import "func"; //导入
 .circle {
-@include circle(250px, #bdbab7);
+  @include circle(250px, #bdbab7);
 }
-.triangle{
-@include  triangle(140px,#dd33dd,right);
+
+.triangle {
+  @include triangle(140px, #dd33dd, right);
 }
