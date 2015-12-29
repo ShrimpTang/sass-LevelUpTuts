@@ -1,0 +1,7 @@
+#d %blue {
+  color: aqua;
+}
+
+.sign {
+  @extend %blue;
+}

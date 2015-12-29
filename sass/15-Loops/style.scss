@@ -1,0 +1,18 @@
+div {
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+@for $i from 1 through 4 {
+  .par-#{$i} {
+    margin-left: 20px*$i
+  }
+}
+
+$w: 1;
+@while $w<=4 {
+  .whi-#{$w}{
+    margin-left: 30px*$w;
+  }
+  $w: $w+1;
+}

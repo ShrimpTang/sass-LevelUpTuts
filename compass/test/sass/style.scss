@@ -1,0 +1,98 @@
+@import "compass";
+$blue: #708c87;
+$margin: 5%;
+$cream: #F2EFEB;
+$cream2: #bdbab7;
+
+body {
+  background: #262626;
+}
+
+header {
+  margin: 20px 0 0 $margin;
+  h1 {
+    color: $blue;
+  }
+
+  h2 {
+    color: $blue;
+    margin: 10px $margin+5%;
+  }
+}
+
+p {
+  margin: 20px $margin;
+}
+
+a {
+  color: $blue;
+}
+
+.grad {
+  @include border-radius(20px);
+  padding: 1%;
+  background-color: $cream;
+  @include background(linear-gradient(top, $cream, $cream2));
+  /*background-image: -webkit-linear-gradient(top, $cream, $cream2);*/
+  .intro {
+    @include border-radius(10px);
+    background-color: lighten($blue, 20%);
+    width:percentage(500px/1400px);
+    float: left;
+    a {
+      font-size: 25px;
+      @include transition-property(all);
+      @include transition-duration(0.2s);
+      @include transition-timing-function(linear);
+      &:hover {
+        /*@include border-radius(10px);*/
+        background-color: $cream2;
+
+      }
+    }
+  }
+  .feature {
+    @extend .intro;
+    width:percentage(900px/1400px);
+   /* border: 1px solid #343d44;*/
+    float: right;
+  }
+}
+
+.social-links li{
+  list-style: none;
+  a {
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 65px;
+    height: 65px;
+    text-indent: -999px;
+  }
+}
+
+$icons:(twitter,facebook,youtube,rss);
+
+@each $icon in $icons{
+  .#{$icon}{background: url('../img/#{$icon}.png')  no-repeat}
+}
+
+@each $p  in (
+one gray,
+two lighten(gray,10%),
+three lighten(gray,20%),
+four lighten(gray,30%)
+
+){
+.#{nth($p,1)}{background-color:#{nth($p,2)}  }
+}
+
+@function back-color($old,$add){
+  @return darken($old,$add);
+}
+.three{
+  background-color: back-color($blue,20%);
+}
+.clearfix:before,.clearfix:after{content:"";display:table};
+.clearfix:after{clear: both};
+.clearfix{*zoom:1}

@@ -1,0 +1,10 @@
+@mixin phone{
+  @content;
+}
+
+.main{
+  background: darkolivegreen;
+  @include phone{
+    border:1px solid aqua;
+  }
+}
