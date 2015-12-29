@@ -4,6 +4,14 @@ $margin: 5%;
 $cream: #F2EFEB;
 $cream2: #bdbab7;
 
+
+@import "icons/*.png";
+
+@include all-icons-sprites;
+
+.twitter{
+  @include icons-sprite(twitter);
+}
 body {
   background: #262626;
 }
@@ -71,11 +79,11 @@ a {
   }
 }
 
-$icons:(twitter,facebook,youtube,rss);
-
-@each $icon in $icons{
-  .#{$icon}{background: url('../img/#{$icon}.png')  no-repeat}
-}
+//$icons:(twitter,facebook,youtube,rss);
+//
+//@each $icon in $icons{
+//  .#{$icon}{background: url('../img/#{$icon}.png')  no-repeat}
+//}
 
 @each $p  in (
 one gray,

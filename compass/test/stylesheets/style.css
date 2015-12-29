@@ -1,33 +1,64 @@
-/* line 7, ../sass/style.scss */
+/* line 72, icons/*.png */
+.icons-sprite, .icons-facebook, .icons-rss, .icons-twitter, .icons-youtube, .twitter {
+  background-image: url('/sass-LevelUpTuts/compass/test/img/icons-s9f25cdebf0.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rss {
+  background-position: 0 -64px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -128px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-youtube {
+  background-position: 0 -192px;
+}
+
+/* line 12, ../sass/style.scss */
+.twitter {
+  background-position: 0 -128px;
+}
+
+/* line 15, ../sass/style.scss */
 body {
   background: #262626;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 header {
   margin: 20px 0 0 5%;
 }
-/* line 13, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 header h1 {
   color: #708c87;
 }
-/* line 17, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 header h2 {
   color: #708c87;
   margin: 10px 10%;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 p {
   margin: 20px 5%;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 a {
   color: #708c87;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .grad {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -41,7 +72,7 @@ a {
   background: linear-gradient(to bottom, #f2efeb, #bdbab7);
   /*background-image: -webkit-linear-gradient(top, $cream, $cream2);*/
 }
-/* line 37, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .grad .intro, .grad .feature {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -50,7 +81,7 @@ a {
   width: 35.71429%;
   float: left;
 }
-/* line 42, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .grad .intro a, .grad .feature a {
   font-size: 25px;
   -moz-transition-property: all;
@@ -66,23 +97,23 @@ a {
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 47, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .grad .intro a:hover, .grad .feature a:hover {
   /*@include border-radius(10px);*/
   background-color: #bdbab7;
 }
-/* line 54, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .grad .feature {
   width: 64.28571%;
   /* border: 1px solid #343d44;*/
   float: right;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .social-links li {
   list-style: none;
 }
-/* line 64, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .social-links li a {
   cursor: pointer;
   float: left;
@@ -92,63 +123,43 @@ a {
   text-indent: -999px;
 }
 
-/* line 77, ../sass/style.scss */
-.twitter {
-  background: url("../img/twitter.png") no-repeat;
-}
-
-/* line 77, ../sass/style.scss */
-.facebook {
-  background: url("../img/facebook.png") no-repeat;
-}
-
-/* line 77, ../sass/style.scss */
-.youtube {
-  background: url("../img/youtube.png") no-repeat;
-}
-
-/* line 77, ../sass/style.scss */
-.rss {
-  background: url("../img/rss.png") no-repeat;
-}
-
-/* line 87, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .one {
   background-color: gray;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .two {
   background-color: #9a9a9a;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .three {
   background-color: #b3b3b3;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .four {
   background-color: #cdcdcd;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .three {
   background-color: #435350;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .clearfix {
   *zoom: 1;
 }
